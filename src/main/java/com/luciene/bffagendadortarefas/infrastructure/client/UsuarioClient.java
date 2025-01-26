@@ -20,7 +20,7 @@ public interface UsuarioClient {
     UsuarioDTOResponse salvaUsuario(@RequestBody UsuarioDTORequest usuarioDtO);
 
     @PostMapping("/login")
-    String login(@RequestBody LoginDTORequest usuarioDTO);
+    String login(@RequestBody LoginDTORequest loginRequest);
 
     @DeleteMapping("/{email}")
     void deletaUsuarioPorEmail(@PathVariable String email,
